@@ -3,8 +3,8 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _7fb848f3 = () => import('..\\pages\\sub.vue' /* webpackChunkName: "pages_sub" */).then(m => m.default || m)
-const _cecf0076 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _65a895ed = () => import('..\\src\\pages\\sub.vue' /* webpackChunkName: "pages_sub" */).then(m => m.default || m)
+const _78ad1382 = () => import('..\\src\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
 
@@ -66,12 +66,12 @@ export function createRouter () {
     routes: [
 		{
 			path: "/sub",
-			component: _7fb848f3,
+			component: _65a895ed,
 			name: "sub"
 		},
 		{
 			path: "/",
-			component: _cecf0076,
+			component: _78ad1382,
 			name: "index"
 		}
     ],

@@ -1,14 +1,16 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\css\\gtris.css'
+import '..\\src\\css\\gtris.css'
 
 
 let layouts = {
 
-  "_header": () => import('..\\layouts\\header.vue'  /* webpackChunkName: "layouts_header" */).then(m => m.default || m),
+  "_header": () => import('..\\src\\layouts\\header.vue'  /* webpackChunkName: "layouts_header" */).then(m => m.default || m),
 
-  "_sidebar": () => import('..\\layouts\\sidebar.vue'  /* webpackChunkName: "layouts_sidebar" */).then(m => m.default || m),
+  "_sidebar": () => import('..\\src\\layouts\\sidebar.vue'  /* webpackChunkName: "layouts_sidebar" */).then(m => m.default || m),
+
+  "_sms-layout": () => import('..\\src\\layouts\\sms-layout.vue'  /* webpackChunkName: "layouts_sms-layout" */).then(m => m.default || m),
 
   "_default": () => import('./layouts/default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m)
 
