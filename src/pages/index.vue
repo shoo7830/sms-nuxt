@@ -14,7 +14,7 @@
 					<td>title</td>
 					<td>body</td>
 				</tr>
-				<tr v-for="post of posts">
+				<tr v-for="post of posts" :key="post.id">
 					<td>{{post.id}}</td>
 					<td>{{post.title}}</td>
 					<td>{{post.body}}</td>
